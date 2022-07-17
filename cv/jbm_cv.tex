@@ -1,0 +1,990 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\documentclass[12pt, a4paper]{article}
+\documentclass[12pt]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\geometry{textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Jeffrey Mulligan - vita},
+	pdfauthor={Jeff Mulligan},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Jeffrey Brooke Mulligan}\\[1cm]
+ Human Systems Integration Division\\
+ NASA Ames Research Center\\
+MS 262-2\\
+Moffett Field, CA \texttt{94035}
+\\[.2cm]
+Phone: \texttt{650-604-3745} (W), \texttt{408-250-6567} (C)\\
+Fax: \texttt{650-604-3323}\\[.2cm]
+email: \href{mailto:jeffrey.b.mulligan@nasa.gov}{jeffrey.b.mulligan@nasa.gov}\\
+\textsc{url}: \href{http://hsi.arc.nasa.gov/groups/scanpath/}{http://hsi.arc.nasa.gov/groups/scanpath/}\\ 
+alt. email: \href{mailto:jbmull@gmail.com}{jbmull@gmail.com}\\
+%\vfill
+% Born:  December 14, 1958---Detroit, MI\\
+
+%%\hrule
+%\section*{Current position}
+%%\emph{Emeritus Professor}, Institute for Advanced Study, Princeton
+%Computer Engineer (GS 14-10), NASA Ames Research Center
+
+%%%\hrule
+%\section*{Skills}
+% Psychophysical research • Optics • Electronic design • Computer programming
+
+%\hrule
+\section*{Education}
+\noindent
+\years{1986}\textsc{PhD} in Psychology, University of California at San Diego\\
+\years{1982}\textsc{MA} in Psychology, University of California at San Diego\\
+\years{1980}\textsc{AB} in Physics (\emph{cum laude} general studies), Harvard University\\
+\years{1975}US Math Olympiad Summer Program, Rutgers University\\
+
+%%\hrule
+\section*{Employment}
+\noindent
+\years{1987-present}Computer engineer, NASA Ames Research Center\\
+\years{1986-1987}National Research Council post-doctoral associate, NASA Ames Research Center\\
+\years{1980-1986}Research and teaching assistant, Department of Psychology, UC San Diego\\
+\years{1982-1983}Research assistant, AT\&T Bell Laboratories, Murray Hill NJ\\
+\years{1980}Research assistant, Division of Applied Sciences, Harvard University\\
+
+\section*{Teaching}
+\noindent
+\years{1991}Introduction to Computer Science, UC Santa Cruz\\
+\years{1991}Data Structures, UC Santa Cruz\\
+\years{1990}Sensation \& Perception, Cal. State Hayward (Contra Costa campus)\\
+\years{1980-1986}Teaching assistant, Department of Psychology, UC San Diego\\
+courses taught:  sensory laboratory, neuropsychology
+
+%\hrule
+\section*{Professional societies}
+\noindent
+\years{2001-present}Vision Sciences Society (VSS)\\
+\years{1984-present}Optical Society of America (OSA)\\
+\years{2005-present}Society for Information Display (SID)\\
+\years{1982-2001}Association for Research in Vision and Ophthalmology (ARVO)\\
+
+%\hrule
+\section*{Professional service}
+\subsection*{Conference organization}
+\noindent
+\years{2012-present}Co-organizer, VSS satellite workshop on\\
+\hspace*{5 mm}Computational and Mathematical Models in Vision (MODVIS)\\
+\years{2018-present}Co-chair, IS\&T Conference on Human Vision and Electronic Imaging (HVEI)\\
+\years{2004-2018}Program committee, SPIE/IS\&T Conference on\\
+\hspace*{5 mm}Human Vision and Electronic Imaging\\
+\years{2013-2016}Chair, Vision technical committee, Vision and Color division,  OSA\\
+\years{2015}Chair, local organizing committee, OSA Fall Vision Meeting\\
+\years{2009-2010,2018}Area chair, ACM Symposium on Eye Tracking Research and Applications\\
+\years{2011-2014}Program co-chair, ACM Symposium on Eye Tracking Research and Applications\\
+\years{2010-2013}Vice-chair, Vision technical committee, Vision and Color division,  OSA\\
+\years{2005-present}Program committee (Applied Vision subcommittee)\\
+\hspace*{5 mm}Society for Information Display\\
+\years{2006-present}Program committee, International Symposium on Visual Computing\\
+
+\subsection*{Standards committees}
+\years{2017-present}International Committee for Display Metrology\\
+\years{2013-present}COGAIN technical committee for eye tracker data quality standardization\\
+
+\subsection*{\emph{Ad hoc} reviewing}
+Journal of Vision (``exceptional reviewer")\\
+Vision Research\\
+Journal of the Optical Society of America, A\\
+Displays\\
+Biomedical Optics Express\\
+IEEE Transactions on Biomedical Engineering\\
+Physiological Measurement\\
+%Optics Letters\\
+%Journal of Parallel and Distributed Computing\\
+%Journal of Aircraft\\
+
+%\hrule
+\section*{Honors \& awards}
+\noindent
+\years{2018}NASA group achievement award, fatigue app.\\
+\years{2016, 2013}NASA software release award\\
+\years{2009}NASA group achievement award, Constellation Training Facility team\\
+\years{1983-1985}IBM graduate fellowship\\
+\years{1984}NIH travel scholarship to attend International School of Biophysics (Italy)\\
+\years{1983}ARVO travel fellowship\\
+
+
+%\vspace{10 mm}
+
+%\clearpage
+\section*{Software}
+\years{2009,2016}
+QuIP - An interactive environment for QUick Image Processing.  The QuIP interpreter provides a convenient interface to libraries for image processing, graphics, image acquisition, and control of other pieces of laboratory hardware.  The systems runs on unix-like systems (linux, Mac OSX), and Apple iOS.  GPU acceleration is provided with either CUDA or OpenCL.\\
+\href{https://github.com/nasa/QuIP}{https://github.com/nasa/QuIP}
+
+\section*{Publications}
+
+
+\subsection*{Journal articles (17) \& proceedings papers (32)}
+\noindent
+
+\years{2018}
+Mulligan, J. B. (2018).  ``Statistical identifications of fixations in noisy eye movement data." in Rogowitz, B. E. Pappas, T. N., and de Ridder, H. (eds.), \emph{Human Vision and Electronic Imaging 2018, IS\&T International Symposium on Electronic Imaging 2018}.\\
+
+\years{2017}
+Arsintescu, L., Mulligan, J. B., and Flynn-Evans, E. E. (2017).
+``Evaluation of psychomotor vigilance task for touch screen devices."
+\emph{Human Factors},
+\newline
+DOI:10.1177/0018720816688394.
+\href{https://hsi.arc.nasa.gov/publications/Arsintescu_Mulligan_Flynn-Evans_pvt.pdf}{PDF}
+\\
+
+\years{2016}
+Mulligan, J. B. (2016).  ``A method for rapid measurement of contrast sensitivity on mobile touch-screens." in Rogowitz, B. E. Pappas, T. N., and de Ridder, H. (eds.), \emph{Human Vision and Electronic Imaging 2016, IS\&T International Symposium on Electronic Imaging 2016},  pp. HVEI-104.1 - HVEI-104.6.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_HVEI_2016_Rapid_Meas_Mobile.pdf}{PDF}\\
+
+\years{2013}
+Mulligan, J. B., Stevenson, S. B., and Cormack, L. K. (2013).
+``Reflexive and voluntary control of smooth eye movements.”
+in Rogowitz, B. E. Pappas, T. N., and de Ridder, H. (eds.),
+\emph{Human Vision and Electronic Imaging XVIII},
+Proc. SPIE, v. 8651.  \href{https://hsi.arc.nasa.gov/publications/mulligan_et_al_spie13.pdf}{PDF}\\
+
+\years{2012}
+Mulligan, J. B. (2012).
+``A GPU-accelerated software eye tracking system.”
+\emph{Proc. ACM Symposium on Eye Tracking Research and Applications} (ETRA),
+pp. 265-268.  \href{https://hsi.arc.nasa.gov/publications/mulligan_etra12.pdf}{PDF}\\
+
+% clearpage forces a page break - we do this so citations
+% don't straddle page breaks - but these have to be placed by hand!?
+%\clearpage
+
+\years{2010}
+Mulligan, J. B., and Gabayan, K. N. (2010).
+``Robust optical eye detection during head movement.”
+\emph{Proc. ACM Symposium on Eye Tracking Research and Applications} (ETRA),
+pp. 129-132.  \href{https://hsi.arc.nasa.gov/publications/mulligan_gabayan_etra10.pdf}{PDF}\\
+
+McDermott, K. C., Malkoc, G., Mulligan, J. B., and Webster, M. A. (2010).
+``Adaptation and visual salience."
+\emph{J. Vis.}, v. 10(13), pp. 1-32.\\
+
+\years{2009}
+Mulligan, J. B. (2009).
+``Presentation of calibrated images on the web.”
+in Rogowitz, B. E. and Pappas, T. N. (eds.),
+\emph{Human Vision and Electronic Imaging XIV},
+Proc. SPIE, v. 7240.  \href{https://hsi.arc.nasa.gov/publications/mulligan_spie09.pdf}{PDF}\\
+
+Ahumada, A. J., Jr., Kaiser, M. K., and Mulligan, J. B. (2009).
+``The dynamic range of visual imagery in space.”
+in Rogowitz, B. E. and Pappas, T. N. (eds.),
+\emph{Human Vision and Electronic Imaging XIV},
+Proc. SPIE, v. 7240.\\
+
+Mulligan, J. B. (2009)
+``Motion parallax enhances depth in a perspective air-traffic display."
+\emph{SID Symposium Digest of Technical Papers}, v. 40(1), pp. 1231-1233.  \href{https://hsi.arc.nasa.gov/publications/mulligan_sid09.pdf}{PDF (check)}\\
+% make sure sid09 paper is really on the site?  BUG
+
+\years{2008}
+Mulligan, J. B. (2008).
+``Measurement of eye velocity using active illumination.”
+\emph{Proc. ACM Symposium on Eye Tracking Research and Applications} (ETRA),
+pp. 35-38.  \href{https://hsi.arc.nasa.gov/publications/mulligan_etra08.pdf}{PDF}\\
+
+\years{2006}
+Mulligan, J. B. (2006).
+``Optical eye models for gaze tracking.”
+\emph{Proc. ACM Symposium on Eye Tracking Research and Applications} (ETRA), p. 51.  \href{https://hsi.arc.nasa.gov/publications/mulligan_etra06.pdf}{PDF}\\
+
+McDermott, K., Mulligan, J. B., Bebis, G., and Webster, M. A. (2006).
+``Visual search and eye movements in novel and familiar contexts.”
+in Rogowitz, B. E., Pappas, T. N., and Daly, S. J. (eds.),
+\emph{Human Vision and Electronic Imaging XI},
+Proc. SPIE, v. 6057.\\
+
+\years{2005}
+Mulligan, J. B. (2005).
+``A tree-structured model of visual appearance applied to gaze-tracking."
+In Bebis, G., Boyle, R., Koracin, D., and Parvin, B. (eds.),
+\emph{First International Symposium on Visual Computing},
+Springer Lecture Notes on Computer Science v. 3804, pp. 303-312.  \href{https://hsi.arc.nasa.gov/publications/mulligan_isvc05.pdf}{PDF}\\
+
+\clearpage
+Mulligan, J. B., and Brolly, X. L. C. (2005).
+``Pilot behavior and course deviations during precision flight.”
+in Rogowitz, B. E. and Pappas, T. N. (eds.),
+\emph{Human Vision and Electronic Imaging X},
+Proc. SPIE, v. 5666,
+pp. 362-373.  \href{https://hsi.arc.nasa.gov/publications/mulligan_spie05.pdf}{PDF}\\
+% Human Vision and Electronic Imaging X, pp.  362-373.
+
+\years{2004}
+Mulligan, J. B., and Brolly, X. L. C. (2004).
+``Surface determination by photometric ranging."
+\emph{Conference on Computer Vision and Pattern Recognition Workshop} (CVPRW04),
+v. 3, pp. 40-47.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_Brolly_ranging.pdf}{PDF}\\
+
+Brolly, X. L. C., and Mulligan, J. B. (2004).
+``Implicit calibration of a remote gaze tracker."
+\emph{Conference on Computer Vision and Pattern Recognition Workshop} (CVPRW04),
+v. 8, pp. 134-141.  \href{https://hsi.arc.nasa.gov/publications/Brolly_Mulligan_galvo.pdf}{PDF}\\
+
+Meyer, G. F., Mulligan, J. B., and Wuerger, S. M. (2004).
+``Continuous audio-visual digit recognition using N-best decision fusion."
+\emph{Information Fusion}, v. 5(2), pp. 91-101.\\
+
+\years{2003}
+Brolly, X. L. C., Stratelos, C., and Mulligan, J. B. (2003).
+``Model-based head pose estimation for air-traffic controllers."
+\emph{Proc. IEEE International Conf. on Image Processing} (ICIP),
+Barcelona, Spain, v. 3, pp 113-116.  \href{https://hsi.arc.nasa.gov/publications/mulligan_icip03.pdf}{PDF}\\
+
+\years{2002}
+Mulligan, J. B., (2002).
+``A software-based eye tracking system for the study of air-traffic displays."
+\emph{Proc. ACM Symposium on Eye Tracking Research and Applications} (ETRA),
+pp. 69-76.  \href{https://hsi.arc.nasa.gov/publications/mulligan_etra02jbm.pdf}{PDF}\\
+
+Mulligan, J. B., (2002).
+``Vision-based approaches to digital halftoning."
+\emph{Proc. 55th Annual Conference
+of the Society for Imaging Science and Technology},
+Portland OR, pp. 1-4.  \href{https://hsi.arc.nasa.gov/publications/mulligan_pics02_jbm.pdf}{PDF}\\
+
+\years{2001}
+Mulligan, J. B., (2001).
+``Sensory processing delays measured with the eye movement correlogram."
+in Kaminski, H. J., and Leigh, R. J. (eds.),
+``Neurobiology of eye movements:  from molecules to behavior."
+\emph{Annals of the New York Academy of Science}, v. 956, pp. 476-478.\\
+
+\years{1999}
+Watson, A. B., Hu, Q. J., McGowan, J. F. III, and Mulligan, J. B., (1999).
+``Design and performance of a digital video quality metric."
+\emph{Human Vision and Electronic Imaging IV}, 
+Proc. SPIE, v. 3644,
+pp. 168-174.\\
+
+\years{1997}
+Mulligan, J. B., (1997).
+``Application of Motion-JPEG to dynamic stimulus presentation."
+\emph{Spatial Vision}, v. 11, pp. 19-32.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_m_jpeg.pdf}{PDF}\\
+
+\clearpage
+Mulligan, J. B., (1997).
+``Image processing for improved eye tracking accuracy."
+\emph{Behavior Research Methods, Instrumentation and Computers},
+v. 29, pp. 54-65.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_img_eye_track_accuracy.pdf}{PDF}\\
+
+Mulligan, J. B., (1997).
+``Application of temporal error diffusion to motion JPEG."
+in Rogowitz, B. E. and Pappas, T. N. (eds.),
+\emph{Human Vision and Electronic Imaging II},
+Proc. SPIE, v. 3016,
+pp. 288-295.  \href{http://hsi.arc.nasa.gov/publications/mulligan_spie97.pdf}{PDF}\\
+
+% clearpage forces a page break - we do this so citations
+% don't straddle page breaks - but these have to be placed by hand!?
+%\clearpage
+Mulligan, J. B., (1997).
+``Recovery of motion parameters from distortions in scanned images."
+in Le Moigne, J. (ed.),
+\emph{Proc. Image Registration Workshop},
+NASA Goddard Space Flight Center, Greenbelt, Maryland, November 20-21, 1997.
+NASA Publication \# CP-1998-206853.  \href{https://hsi.arc.nasa.gov/publications/mulligan_irw97.pdf}{PDF}\\
+
+\years{1996}
+Beutter, B. R., Mulligan, J. B., and Stone, L. S., (1996).
+``The barberplaid illusion:  plaid motion is biased by elongated apertures."
+\emph{Vision Res.}, v. 36, pp. 3061-3075.\\
+
+Mulligan, J. B., (1996).
+``When are supercomputers worth the bother?"
+\emph{Behavior Research Methods, Instrumentation and Computers},
+v. 28, pp. 239-240.\\
+
+\years{1995}
+Mulligan, J. B., and Beutter, B. R., (1995).
+``Eye-movement tracking using compressed video images."
+\emph{Vision Science and its Applications},
+1995 Technical Digest Series,
+v. 1,
+Optical Society of America,
+pp. 163-166.\\
+
+\years{1994}
+Mulligan, J. B., and MacLeod, D. I. A., (1994).
+``In search of an optoretinogram."
+\emph{Vision Science and its Applications},
+1994 Technical Digest Series,
+v. 2,
+Optical Society of America,
+pp. 167-170.\\
+
+\years{1993}
+Mulligan, J. B., (1993).
+``Nonlinear combination rules and the perception of motion transparency."
+\emph{Vision Res.},
+v. 33, pp. 2021-2030.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_nonlinear_combin.pdf}{PDF}\\
+
+%\clearpage
+Mulligan, J. B., (1993).
+``Methods for spatiotemporal dithering."
+\emph{SID International Symposium Digest of Technical Papers},
+v. 24, pp. 155-158.\\
+
+Mulligan, J. B., (1993).
+``Improving digital halftones by exploiting visual system properties."
+in Singh, A. (ed.), Conference record,
+\emph{27th Asilomar conference on Signals, Systems and Computers},
+IEEE Computer Society Press,
+pp. 961-965.  \href{https://hsi.arc.nasa.gov/publications/mulligan_asil93.pdf}{PDF}\\
+
+\years{1992}
+Mulligan, J. B., (1992).
+``Anisotropy in an ambiguous kinetic depth effect."
+\emph{J. Opt. Soc. Am. A},
+v. 9, pp. 521-529.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_anis.pdf}{PDF}\\
+
+Mulligan, J. B., and Ahumada, A. J., Jr., (1992).
+``Principled halftoning based on human vision models."
+in Rogowitz, B. E. (ed.),
+\emph{Human Vision, Visual Processing, and Visual Display III},
+Proc. SPIE, v. 1666,
+pp. 109-121.  \href{https://hsi.arc.nasa.gov/publications/mulligan_spie92.pdf}{PDF}\\
+
+Mulligan, J. B., and Ahumada, A. J. Jr., (1992).
+``Principled methods for color dithering based on models of the human visual system."
+\emph{SID International Symposium Digest of Technical Papers},
+v. 23, pp. 194-197.\\
+
+\years{1991}
+Mulligan, J. B. and MacLeod, D. I. A., (1991).
+``Visual sensitivity to spatially sampled modulation in human observers."
+\emph{Vision Res.}, v. 31, pp. 895-905.  \href{https://hsi.arc.nasa.gov/publications/Mulligan_samp300.pdf}{PDF}\\
+
+Ahumada, A. J., Jr., and Mulligan, J. B., (1991).
+``Network compensation for missing sensors."
+in Rogowitz, B. E., Brill, M. H., and Allebach, J. P. (eds.),
+\emph{Human Vision, Visual Processing, and Visual Display II},
+Proc. SPIE, v. 1453,
+pp. 134-146.\\
+
+\years{1990}
+Stone, L. S., Watson, A. B., and Mulligan, J. B., (1990).
+``Effect of contrast on the perceived direction of a moving plaid."
+\emph{Vision Res}., v. 30, pp. 1049-1067.\\
+
+Ahumada, A. J., Jr., and Mulligan, J. B., (1990).
+``Learning receptor positions from imperfectly known motions."
+in Rogowitz, B. E., and Allebach, J. P. (eds.),
+\emph{Human Vision and Electronic Imaging:  Models, Methods, and Applications},
+Proc. SPIE, v. 1249,
+pp. 124-134.\\
+
+Mulligan, J. B., (1990).
+``Digital halftoning methods for selectively partitioning
+error into achromatic and chromatic channels."
+in Rogowitz, B. E., and Allebach, J. P. (eds.),
+\emph{Human Vision and Electronic Imaging:  Models, Methods, and Applications},
+Proc. SPIE, v. 1249,
+pp. 261-270.  \href{https://hsi.arc.nasa.gov/publications/spie90.pdf}{PDF}\\
+
+\years{1989}
+Mulligan, J. B., and Stone, L. S., (1989).
+``Halftoning method for the generation of motion stimuli."
+\emph{J. Opt. Soc. Am.}, v. 6, pp. 1217-1227.  \href{https://hsi.arc.nasa.gov/publications/josa89.pdf}{PDF (check)}\\
+% BUG?  is paper reprint present???
+
+%\clearpage
+Ahumada, A. J., Jr., and Mulligan, J. B., (1989).
+``Learning in interpolation networks for irregular sampling: some convergence properties."
+\emph{OSA Topical Meeting on Applied Vision},
+1989 Technical Digest Series,  v. 16, pp. WC3-1 - WC3-4.\\
+
+\years{1988}
+Mulligan, J. B., and MacLeod, D. I. A., (1988).
+``Reciprocity between luminance and dot density in the perception of brightness."
+\emph{Vision Res}., v. 28, 503-519.  \href{http://hsi.arc.nasa.gov/publications/vr88.pdf}{PDF (check)}\\
+
+\years{1986}
+Mulligan J. B., (1986).
+``Optimizing stereo separation in color television anaglyphs."
+\emph{Perception}, v. 15, pp. 27-36.\\
+
+Mulligan J. B., (1986).
+``Minimizing quantization errors in a digitally controlled CRT."
+\emph{Color Res. Appl.} (suppl.), v. 11, pp. S47-S51.\\
+
+\clearpage
+\years{1985}
+Nakayama K., Silverman G., MacLeod D. I. A., and Mulligan J. B., (1985).
+``Sensitivity to shearing and compressive motion in random dots."
+\emph{Perception}, v. 14, pp. 225-238.\\
+
+\years{1982}
+Stromeyer C. F. III, Mulligan J. B., Birch D. G., and Dawson B. M., (1982).
+``Adaptation to polarized light in humans."
+\emph{Vision Res.}, v. 22, pp. 217-224.\\
+
+\subsection*{Book Chapters}
+\noindent
+
+\years{2016}  Mulligan, J. B. (in press).  ``Illusory variations in apparent dot brightness induced by density modulations."
+In Shapiro, A. G., and Todorovic, D. (eds.), \emph{Oxford Compendium of Visual Illusions}, Oxford University Press, Oxford.\\
+
+\years{2008}
+Hamoud, R. I. and Mulligan, J. B., (2008).
+``Introduction to Eye Monitoring."
+In Hamoud, R. I. (ed.), \emph{Passive Eye Monitoring},
+Springer-Verlag, Berlin.
+
+
+\subsection*{NASA Technical Memoranda}
+\noindent
+
+\years{1989}
+Stone, L. S., Watson, A. B., and Mulligan, J. B., (1989).
+\emph{Effect of contrast on the perception of direction of a moving pattern.}
+NASA Tech. Memo. \#102234.\\
+
+\years{1988}
+Mulligan, J. B., and Stone, L. S., (1988),
+\emph{Efficient use of bit planes in the generation of motion stimuli.}
+NASA Tech. Memo. \#101022.\\
+
+%\clearpage
+\clearpage
+\section*{Invited presentations}
+
+\years{2018}
+``An architecture of visual processing revealed by eye movements."
+Smith-Kettlewell Eye Research Institute, San Francisco.\\
+
+\years{2017}
+``Color algebras."  Dept. of Psychology, University of Nevada at Reno.\\
+
+\years{2015}
+``Measuring and modeling shared visual attention."
+Dept. of Cognitive Sciences, University of California at Irvine.\\
+
+``An architecture of visual processing revealed by eye movements."
+Center for Visual Science, University of Rochester.\\
+
+\years{2013}
+``Taking gaze tracking from the laboratory to the field (and sky)."
+Project Glass group, Google Research, Mountain View, CA.\\
+
+\years{2012}
+``An eye movement-defined hierarchy of visual stimuli."  CMU West, Moffett Field CA.\\
+
+\years{2011}
+``An eye movement-defined hierarchy of visual stimuli."  City University of London, U.K.\\
+
+\years{2010}
+``Visual dynamics revealed by oculomotor oscillations."  Center for Perceptual Systems, University of Texas at Austin.\\
+
+``Visual dynamics revealed by oculomotor oscillations."  Dept. of Psychology, University of California at Santa Cruz.\\
+
+\years{2008}
+``Visual dynamics revealed by oculomotor oscillations."  Dept. of Psychology, University of California at Los Angeles.\\
+
+%\clearpage
+\years{2007}
+``Spontaneous oculomotor oscillations induced by delayed visual feedback."  Giessen University, Germany.\\
+
+``Spontaneous oculomotor oscillations induced by delayed visual feedback."  University of Padova, Italy.\\
+
+``Spontaneous oculomotor oscillations induced by delayed visual feedback."  University of California at Irvine.\\
+
+\years{2005}
+``Inference of cognitive state from gaze behaviors ."  Symposium on Bio-inspired Processing, Luebeck, Germany.\\
+
+``Inference of cognitive state from gaze behaviors ."  Dept. of Computer Science, University of Bremen, Bremen, Germany.\\
+
+``Biometric applications of active illumination."  Agilent Laboratories, Palo Alto CA.\\
+
+``Taking gaze tracking from the laboratory to the field (and sky)."  Intel Laboratories, Santa Clara CA.\\
+
+``Taking gaze tracking from the laboratory to the field (and sky)."  Dept. of Psychology, University of Nevada at Reno.\\
+
+\years{2003}
+``The eye movement correlogram:  a new physiological tool for probing the time course of visual processing."  UC Berkeley School of Optometry, Berkeley CA.\\
+
+\years{2002}
+``Vision-based approaches to digital halftoning."  PICS Conference, Portland OR.\\
+
+``A model of visual tracking suggests a biphasic motion response."  University of Houston College of Optometry, Houston TX.\\
+
+\years{1993}
+``Improving digital halftones by exploiting visual system properties."
+27th Asilomar conference on Signals, Systems and Computers.
+
+\clearpage
+\section*{Presentations}
+
+\subsection*{Conference presentations with published abstracts}
+\noindent
+
+%\hrulefill
+
+\years{2018}
+Mulligan, J. B. (in press).
+``Discovery of activities via statistical clustering of fixation patterns."
+\emph{J. Vis.}, (Vision Sciences Society annual meeting abstracts).\\
+
+\years{2017}
+Mulligan, J. B., Diaz-Piedra, C., and di Stasi, L. L. (2017).
+``Oculomotor assessment of diurnal arousal variations."
+\emph{J. Vis.}, v. 17(10), p. 1153.\\
+
+Mulligan, J. B., and Kalar, D. J. (2017).
+``Identification of fixations in noisy eye movement data via recursive subdivision."
+\emph{J. Vis.}, v. 17(7), p. 43.\\
+
+\years{2016}
+Stevenson, S., Mahadevan, M., and Mulligan, J. (2016).
+``Attentional modulation of eye torsion responses."
+\emph{J. Vis.}, v. 16(12), p. 1304.\\
+
+Mulligan, J. B., and Gontar, P. (2016).
+``Measuring and modeling shared visual attention."
+Proc. 5th annual workshop on Computational and Mathematical Models in Vision (MODVIS). 
+\href{http://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1058&context=modvis}{PDF}\\
+
+Mulligan, J. B., Arsintescu, L., and Flynn-Evans, E. E. (2016).
+``Measurement of visual reaction times using hand-held mobile devices."
+\emph{J. Vis.}, v. 16(4), p. 41.\\
+
+\years{2015}
+Mulligan, J. B. (2015).
+``Psychophysical calibration of mobile touch screens for vision testing in the field."
+\emph{J. Vis.}, v. 15(12), p. 475.\\
+
+\years{2014}
+Mulligan, J. B., and Stevenson, S. B. (2014).
+``Smooth pursuit of flicker-defined motion."
+\emph{J. Vis.}, v. 14(10), p. 493.\\
+
+\years{2013}
+Mulligan, J. B. (2013).
+``Rapid Assessment of Contrast Sensitivity with Mobile Touch-screens."
+\emph{J. Vis.}, v. 13(9), p. 270.\\
+
+Mulligan, J. B. (2013).
+``Visual nonlinearities and the perception of shimmer in repetetive patterns."
+\emph{J. Vis.}, v. 13(15), p. P16.\\
+
+\years{2012}
+Mulligan, J. B. (2012).
+``The phantom spokes illusion."
+\emph{J. Vis.}, v. 12(9), p. 1211.\\
+
+Mulligan, J. B., and Stevenson, S. B. (2012).
+``An Eye-Movement-Defined Hierarchy of Visual Stimuli."
+\emph{J. Vis.}, v. 11(15), p. 52.\\
+
+\years{2011}
+Mulligan, J. B. (2011).
+``Assessing visual delays using pupil oscillations."
+\emph{J. Vis.}, v. 11(11), p. 504.\\
+
+%\vspace{10 mm}
+
+\years{2010}
+Mulligan, J. B., and Steelman-Allen, K. S. (2010).
+``Conspicuity of peripheral visual alerts."
+\emph{J. Vis.}, v. 10(7), p. 150.\\
+
+McDermott, K. C., Malkoc, G., Mulligan, J. B., and Webster, M. A. (2010).
+``Adaptation and visual salience."
+\emph{J. Vis.}, v. 10(13), p. 17.\\
+
+Mulligan, J. B. (2010).
+``Factors influencing scanning for alerts."
+\emph{J. Vis.}, v. 10(15), p. 69.\\
+
+\years{2009}
+Mulligan, J. B., and Stevenson, S. B. (2009).
+``No role for visual motion in manual tracking."
+\emph{J. Vis.}, v. 9(14), p. 67.\\
+
+Mulligan, J. B., and Stevenson, S. B. (2009).
+``A comparison of the dynamics of visually-controlled head and hand movements."
+\emph{J. Vis.}, v. 9(8), p. 846.\\
+
+\years{2008}
+Mulligan, J. B., and Stevenson, S. B. (2008).
+``A frequency sweep method for rapid estimation of visual delays."
+\emph{J. Vis.}, v. 8(6), p. 366.\\
+
+%\clearpage
+\years{2007}
+Mulligan, J. B., and Stevenson, S. B. (2007).
+``Spontaneous vergence oscillations induced by delayed visual feedback."
+\emph{J. Eye Movement Res.}, v. 1(1), p. 40.\\
+
+Mulligan, J. B., and Stevenson, S. B. (2007).
+``Pursuit response to tritanopic stimuli."
+\emph{Perception}, v. 36, ECVP Abstract Supplement, p. 166.\\
+
+Mulligan, J. B., and Stevenson, S. B. (2007).
+``Spontaneous oculomotor oscillations induced by delayed visual feedback."
+\emph{J. Vis.}, v. 7(9), p. 320.\\
+
+\years{2006}
+McDermott, K. C., Mulligan, J. B., Bebis, G., and Webster, M. A. (2006).
+``Visual search in familiar contexts – effects of learning or adaptation?"
+\emph{J. Vis.}, v. 6(6), p. 527.\\
+
+Mulligan, J. B., and Trujillo, M. T. (2006).
+``Temporal summation in trajectory perception."
+\emph{J. Vis.}, 6(6), p. 1082.\\
+
+\years{2005}
+Mulligan, J. B. (2005).
+``Optical eye models for gaze tracking."
+\emph{J. Vis.}, 5(12), p. 77.\\
+
+McDermott, K., Loving, R., Mulligan, J. B., Bebis, G., and Webster, M. A. (2005).
+``Eye movements and visual search in novel and familiar contexts."
+\emph{J. Vis.}, 5(12), p. 73.\\
+
+\clearpage
+Mulligan, J. B., Stevenson, S. B., and Cormack, L. K., (2005).
+``The effect of plaid orientation on pursuit of partially-predictable motion."
+\emph{J. Vis.}, 5(8), article 440
+Proc. Vision Sciences Society 5th Annual Meeting, p. 122.\\
+
+\years{2004}
+Mulligan, J. B. (2004).
+``Taking gaze tracking from the lab to the field (and sky)."
+\emph{J. Vis.}, 4(11), p. 13.\\
+
+Mulligan, J. B., Stevenson, S. B., and Cormack, L. K., (2004).
+``Polarization analysis of the eye movement correlogram."
+\emph{J. Vis.}, 4(8), article 651
+(Proc. Vision Sciences Society 4th Annual Meeting, p. 168).\\
+
+Snyder, J. L., Mulligan, J. B., and Maloney, L. T., (2004).
+``Horizontal binocular disparity facilitates visual search
+in stereoscopically-viewed displays."
+\emph{J. Vis.}, 4(8), article 679
+(Proc. Vision Sciences Society 4th Annual Meeting)\\
+
+\years{2003}
+Yang, J., and Mulligan, J. B., (2003).
+``Readability of chromatic transparent text on a patterned background."
+\emph{J. Vis.}, 3(9), article 448
+(Proc. Vision Sciences Society 3rd Annual Meeting, p. 128).\\
+
+%\clearpage
+Stevenson, S. B., Mulligan, J. B., and Cormack, L. K., (2003).
+``Attention adds a long latency component in eye movement correlograms."
+\emph{J. Vis.}, 3(9), article 143
+(Proc. Vision Sciences Society 3rd Annual Meeting, p. 47).\\
+
+Mulligan, J. B., and Stevenson, S. B., (2003).
+``The contrast dependence of eye-movement latencies."
+\emph{J. Vis.}, 3(9), article 438
+(Proc. Vision Sciences Society 3rd Annual Meeting, p. 125-126).\\
+
+Mulligan, J. B., (2003).
+``Anisotropy in the eye movement correlogram."
+\emph{Perception},
+v.  32 (ECVP supplement), p. 23.\\
+
+\years{2002}
+Mulligan, J. B. and Stevenson, S. B. (2002).
+``Speed-dependent delays for smooth eye movements."
+\emph{J. Vis.}, 2(10), p. 20.\\
+
+Mulligan, J. B. (2002).
+``A model of oculomotor tracking suggests a biphasic motion response."
+\emph{J. Vis.}, v. 2(7)
+(Proc. Vision Sciences Society 2nd Annual Meeting, p. 199).\\
+
+\years{2001}
+Mulligan, J. B., and Huemer, V. A., (2001).
+``Effects of color-coding on search in air traffic displays assessed by scan-path analysis."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v.  42, p. 927.\\
+
+Mulligan, J. B., (2001).
+``Sensory processing delays measured with the eye-movement correlogram."
+\emph{Optics Express}, v.  9, p. 12.
+(Optical Society of America, Vision and Color Meeting)\\
+
+%\clearpage
+\years{2000}
+Mulligan, J. B., (2000).
+``Scan path analysis of air traffic control displays."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v.  41, p. 423.\\
+
+\years{1999}
+Mulligan, J. B., and Grosof, D. H., (1999).
+``What the pilot's brain tells the pilot's eye."
+\emph{OSA 1999 Annual Meeting}.\\
+
+Mulligan, J. B., (1999).
+``Eye tracking using multiple features."
+\emph{OSA 1999 Annual Meeting}.\\
+
+Watson, A. B., Hu, Q. J., McGowan, J. F., and Mulligan, J. B. (1999).
+``Design and performance of a digital video quality metric."
+in Rogowitz, B. E., and Pappas, T. N. (eds.),
+\emph{Human Vision and Electronic Imaging IV},
+Proc. SPIE, v. 3644.\\
+
+\years{1998}
+Mulligan, J. B., (1998).
+``Video-based head and eye tracking."
+\emph{OSA 1998 Annual Meeting}.\\
+
+Mulligan, J. B., (1998).
+``Pursuit latency for chromatic targets."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 39, p. S444.\\
+
+Grosof, D. H., Mulligan, J. B., and Gidday, J. M. (1998).
+``Improved Estimates of CNS Blood Flow by Image Registration of Angiographic Videos."
+\emph{Soc. Neurosci. Abs.}, v. 24, p. 429.\\
+
+\years{1997}
+Mulligan, J. B., (1997).
+``Image rotation does not rotate smooth eye movements."
+\emph{OSA 1996 Annual Meeting}.\\
+
+Mulligan, J. B., (1997).
+``Eye movements reveal hierarchical motion processing."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 38, p. S937.\\
+
+\years{1996}
+Mulligan, J. B., (1996).
+``Eye-movement tracking using fundus images."
+\emph{OSA 1996 Annual Meeting}, p. 82.\\
+
+Mulligan, J. B., (1996).
+``Perception and pursuit of velocity perturbations."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 37, p. 432.\\
+
+\years{1995}
+Mulligan J. B., Beutter, B. R., and Stevenson, S. B., (1995).
+``Reflexive OKN is biased like perception."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 36, p. 205.\\
+
+\clearpage
+Mulligan, J. B., (1995).
+``Temporal MTF of motion perception."
+\emph{OSA 1995 Annual Meeting}, p. 148.\\
+
+%\clearpage
+Beutter, B. R., Mulligan, J. B., and Stone, L. S., (1995).
+``Analysis of the trial-by-trial correlation between eye movement and perceptual responses to moving plaids."
+\emph{Soc. Neurosci. Abs.}, v. 21, p. 141.\\
+
+\years{1994}
+Mulligan, J. B., and Beutter, B. R., (1994).
+``Additional twists on a continuous barber pole illusion."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 35, p. 2158.\\
+
+Beutter, B. R., and Mulligan, J. B., (1994).
+``The barberplaid illusion."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 35, p. 2157.\\
+
+Beutter, B. R., Mulligan, J. B., and Stone, L. S., (1994).
+``Direction of moving plaids is biased by asymmetric viewing windows."
+\emph{Soc. Neurosci. Abs.},
+v. 20, p. 772.\\
+
+\years{1993}
+Mulligan, J. B., (1993).
+``Classification of Color X-Junctions."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 34, p. 766.\\
+
+%\clearpage
+\years{1992}
+Mulligan, J. B., (1992).
+``Motion transparency is restricted to two planes."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 33, p. 1049.\\
+
+Mulligan, J. B., (1992).
+``Symmetric models of color constancy."
+\emph{OSA Annual Meeting Technical Digest}, v. 23, p. 62.\\
+
+\years{1991}
+Mulligan, J. B., (1991).
+``A continuous version of the barber-pole illusion."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 32, p. 829.\\
+
+Shiffrar, M., and Mulligan, J. B., (1991).
+``A test for models of motion processing:  nonrigidly perceived rotating ellipses."
+\emph{32nd annual meeting of the Psychonomic Society}, p. 30.\\
+
+Mulligan, J. B., and Shiffrar, M., (1991).
+``Perception of rigidity with rotating ellipses."
+\emph{OSA Annual Meeting Technical Digest}, v. 17, p. 225.\\
+
+\years{1990}
+Mulligan, J. B., (1990).
+``Channel model of motion transparency."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 31, p. 528.\\
+
+Ahumada, A. J., Jr., and Mulligan, J. B., (1990).
+``Learning networks for the red-green opponent system."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 31, p. 262.\\
+
+\clearpage
+Mulligan, J. B., (1990).
+``Linear model of color transparency."
+\emph{Optical Society of America Annual Meeting Technical Digest},
+p. 268.\\
+
+%\clearpage
+\years{1989}
+Mulligan, J. B., and Cunningham, H. A., (1989).
+``Motion capture unmasked."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 30, p. 388.\\
+
+\years{1988}
+Stone, L. S., Mulligan, J. B., and Watson, A. B., (1988).
+``Neural determination of the direction of motion:  contrast affects the perceived direction of a moving plaid."
+\emph{Soc. Neurosci. Abs.},
+v. 14, p. 1251.\\
+
+Stone, L. S., Mulligan, J. B., and Watson, A. B., (1988).
+``Contrast affects the perceived direction of a moving plaid."
+\emph{Optics News},  v. 14 no. 9, p. 206.\\
+
+Mulligan, J. B., (1988).
+``Factors affecting the perception of transparent motion."
+\emph{Optics News},  v. 14 no. 9, p. 206.\\
+
+Mulligan, J. B., (1988).
+``Perceived position depends on velocity."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 29, p. 251.\\
+
+%\clearpage
+\years{1987}
+Mulligan, J. B., (1987).
+``A simple method for colorimetric calibration of color TV displays."
+\emph{Optics News},  v. 13, no. 9, p. 166.\\
+
+\years{1986}
+Mulligan, J. B., (1986), "Algorithms for computing structure-from-motion
+evaluated using an ambiguous kinetic depth effect."
+\emph{Inv. Ophth. Vis. Sci.}
+(suppl.), v. 27, p. 142.\\
+
+Chen, B., MacLeod, D. I. A., and Mulligan, J. B., (1986).
+``Does the inhibitory surround improve resolution under light adapted conditions?"
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 27, p. 344.\\
+
+\years{1985}
+Mulligan J. B., (1985).
+``Chromatic modulation sensitivity unimpaired by sampling."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 26, p. 206.\\
+
+\years{1984}
+Mulligan J. B. and MacLeod D. I. A., (1984).
+``Pooling of perceived brightness among distinct texture elements."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 25, p. 199.\\
+
+\years{1983}
+Mulligan J. B. and Krauskopf J., (1983).
+``Vernier acuity for chromatic stimuli."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 24, p. 276.\\
+
+MacLeod D. I. A., Nakayama K., Silverman G. and Mulligan J. B., (1983).
+``Anisotropic spatial integration in the detection of movement."
+\emph{Inv. Ophth. Vis. Sci.} (suppl.), v. 24, p. 277.\\
+
+%\clearpage
+\years{1982}
+Nakayama K., Silverman G., Mulligan J., and MacLeod D. I. A., (1982).
+``Anisotropic spatial integration in motion detection."
+\emph{Fifth European Conference on Visual Perception}, Groot Begijnhof, Leuven, Belgium, September 1982.\\
+
+Mulligan J. B., (1982).
+``Binocular mechanisms in the processing of moving textures."
+\emph{Inv. Ophth. Vis. Sci.}
+(suppl.), v. 22, p. 145.
+
+\noindent
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+\XeTeX } 
+% put the two backslashes after the brace above if the cv pdf URL will follow...
+%\\
+% and then get rid of this brace...
+}
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+%\href{http://scanpath.arc.nasa.gov/jbm/jbm\_cv.pdf}
+%{http://scanpath.arc.nasa.gov/jbm\_cv.pdf}
+%}
+\end{center}
+
+\end{document}
