@@ -1,2 +1,2 @@
 
-[Jeff's CV](./site/jbm_cv.pdf)
+[Jeff's CV](./docs/jbm_cv.pdf)
