@@ -5,7 +5,8 @@ pdf:	xelatex
 
 #NAME = jbm_pubs
 #NAME = jbm_cv
-NAME = jbm_short_cv
+#NAME = jbm_short_cv
+NAME = cv_template_xetex_fontin
 
 # on the sun, this was ptroff
 ROFF=	groff
