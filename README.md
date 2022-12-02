@@ -1,2 +1,2 @@
-# Jeff's stuff
-Jeff's public documents, including his Curriculum Vitae (CV)
+
+[Jeff's CV](./site/jbm_cv.pdf)
